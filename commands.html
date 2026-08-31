@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sleep | Commands</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-dark">
+    <div class="glow-sphere"></div>
+
+    <nav class="navbar glass">
+        <div class="logo">sleep</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="commands.html" class="active">Commands</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=1543182553501016074" class="btn-sm glass-glow">Add to Discord</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="cmd-header">
+            <h1 class="accent">Commands</h1>
+            <p>Full list of moderation and utility features.</p>
+        </header>
+
+        <section class="cmd-controls">
+            <div class="search-box glass">
+                <i data-lucide="search"></i>
+                <input type="text" id="commandSearch" placeholder="Search for a command...">
+            </div>
+            <button class="glass-btn"><i data-lucide="sliders-horizontal"></i> Filter</button>
+        </section>
+
+        <h2 class="category-title">General</h2>
+        <div class="commands-grid">
+            <div class="cmd-card glass-liquid">
+                <div class="card-top"><h3>ping</h3><i data-lucide="copy" class="copy-icon"></i></div>
+                <p>Check if Sleep is online and view latency.</p>
+                <div class="card-footer">
+                    <div class="meta"><span>ARGUMENTS</span><p>none</p></div>
+                    <div class="meta"><span>PERMISSIONS</span><p>none</p></div>
+                </div>
+            </div>
+            <div class="cmd-card glass-liquid">
+                <div class="card-top"><h3>membercount</h3><i data-lucide="copy" class="copy-icon"></i></div>
+                <p>View the total number of members in the server.</p>
+                <div class="card-footer">
+                    <div class="meta"><span>ARGUMENTS</span><p>none</p></div>
+                    <div class="meta"><span>PERMISSIONS</span><p>none</p></div>
+                </div>
+            </div>
+            <div class="cmd-card glass-liquid">
+                <div class="card-top"><h3>afk</h3><i data-lucide="copy" class="copy-icon"></i></div>
+                <p>Set an AFK status to notify others when you are mentioned.</p>
+                <div class="card-footer">
+                    <div class="meta"><span>ARGUMENTS</span><p>[status]</p></div>
+                    <div class="meta"><span>PERMISSIONS</span><p>none</p></div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="category-title" style="margin-top: 60px;">Moderation</h2>
+        <div class="commands-grid">
+            <div class="cmd-card glass-liquid">
+                <div class="card-top"><h3>warn</h3><i data-lucide="copy" class="copy-icon"></i></div>
+                <p>Issue a formal warning to a server member.</p>
+                <div class="card-footer">
+                    <div class="meta"><span>ARGUMENTS</span><p>[user] [reason]</p></div>
+                    <div class="meta"><span>PERMISSIONS</span><p>Manage Messages</p></div>
+                </div>
+            </div>
+            <div class="cmd-card glass-liquid">
+                <div class="card-top"><h3>ban</h3><i data-lucide="copy" class="copy-icon"></i></div>
+                <p>Permanently ban a member from the server.</p>
+                <div class="card-footer">
+                    <div class="meta"><span>ARGUMENTS</span><p>[user] [reason]</p></div>
+                    <div class="meta"><span>PERMISSIONS</span><p>Ban Members</p></div>
+                </div>
+            </div>
+            <div class="cmd-card glass-liquid">
+                <div class="card-top"><h3>purge</h3><i data-lucide="copy" class="copy-icon"></i></div>
+                <p>Bulk delete a specified amount of messages.</p>
+                <div class="card-footer">
+                    <div class="meta"><span>ARGUMENTS</span><p>[amount]</p></div>
+                    <div class="meta"><span>PERMISSIONS</span><p>Manage Messages</p></div>
+                </div>
+            </div>
+            <div class="cmd-card glass-liquid">
+                <div class="card-top"><h3>timeout</h3><i data-lucide="copy" class="copy-icon"></i></div>
+                <p>Temporarily restrict a user from speaking.</p>
+                <div class="card-footer">
+                    <div class="meta"><span>ARGUMENTS</span><p>[user] [time]</p></div>
+                    <div class="meta"><span>PERMISSIONS</span><p>Moderate Members</p></div>
+                </div>
+            </div>
+            <div class="cmd-card glass-liquid">
+                <div class="card-top"><h3>kick</h3><i data-lucide="copy" class="copy-icon"></i></div>
+                <p>Remove a member from the server immediately.</p>
+                <div class="card-footer">
+                    <div class="meta"><span>ARGUMENTS</span><p>[user] [reason]</p></div>
+                    <div class="meta"><span>PERMISSIONS</span><p>Kick Members</p></div>
+                </div>
+            </div>
+            <div class="cmd-card glass-liquid">
+                <div class="card-top"><h3>unban</h3><i data-lucide="copy" class="copy-icon"></i></div>
+                <p>Revoke a ban for a specific user ID.</p>
+                <div class="card-footer">
+                    <div class="meta"><span>ARGUMENTS</span><p>[user_id]</p></div>
+                    <div class="meta"><span>PERMISSIONS</span><p>Ban Members</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer><p>&copy; 2026 sleep.next — All rights reserved.</p></footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
